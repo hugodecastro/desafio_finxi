@@ -5,6 +5,12 @@
   </div>
 </template>
 
+<template>
+  <div id="app">
+    <navigation/> //using the navigation component in the template section
+  </div>
+</template>
+
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
@@ -12,6 +18,17 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  }
+}
+</script>
+
+<script>
+import Navigation from './components/includes/nav.vue' //import the component
+
+export default {
+  name: 'App',
+  components: {
+    Navigation  //instantiate it here
   }
 }
 </script>
